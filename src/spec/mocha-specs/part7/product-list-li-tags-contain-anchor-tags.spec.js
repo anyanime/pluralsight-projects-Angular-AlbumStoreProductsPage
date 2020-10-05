@@ -17,12 +17,12 @@ describe("ProductListComponent", () => {
     );
 
     try {
-      productListNodes[0].attrs.find(attr => (list = attr.value.match(/list/)));
-      const productListing = parse5.serialize(productListNodes[0]);
+      productListNodes[1].attrs.find(attr => (list = attr.value.match(/list/)));
+      const productListing = parse5.serialize(productListNodes[1]);
       $ = cheerio.load(productListing);
       li = $("li");
       anchorTag = li.children("a");
-      element = productListNodes[0].tagName;
+      element = productListNodes[1].tagName;
     } catch (e) {
       assert(
         "The ProductListComponent's HTML file doesn't contain an `li` tag."
