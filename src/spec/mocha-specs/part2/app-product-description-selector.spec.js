@@ -33,7 +33,7 @@ describe("ProductPageComponent", () => {
     );
 
     assert(
-      rowDiv.length > 2,
+      rowDiv.length > 1,
       "The ProductPageComponent should have three `<div></div>` elements with a class of `row`."
     );
 
